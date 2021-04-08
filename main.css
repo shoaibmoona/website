@@ -1,0 +1,28 @@
+nav{
+    display: flex;
+    float: right;
+
+}
+marquee{
+    margin-top: 10px;;
+}
+nav a{
+    padding: 10px;
+}
+.align{
+    display: grid;
+    grid-template-columns: repeat(15,1fr);
+    grid-template-rows: minmax(120px,auto);
+    grid-gap:60px;
+    margin-top: 5%;
+}
+#login-page{
+    grid-column: 2/6;
+    
+}
+#news{
+    grid-column:6/10;
+}
+#rightBar{
+    grid-column: 12/15;
+}
