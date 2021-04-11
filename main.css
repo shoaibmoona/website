@@ -24,8 +24,8 @@
 .marquee{
     grid-column: 1/6;
     background-color: lightyellow;
-    margin:20px;
     padding:8px;
+    color:red
 }
 .login{
  
@@ -42,4 +42,12 @@
 .faq
 {
     grid-column: 4/6;
+}
+a
+{
+    text-decoration: none;
+}
+.ql a
+{
+ color: brown;   
 }
