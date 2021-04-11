@@ -35,6 +35,10 @@
     text-decoration: none;
     color:white;
 }
+.header-nav:hover
+{
+    background-color:darkblue;
+}
 .marquee{
     grid-column: 1/6;
     background-color: lightyellow;
