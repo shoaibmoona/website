@@ -1,8 +1,8 @@
 .grid-container 
 {
     display:grid;
-    grid-template-columns: auto auto auto auto auto;
-    grid-gap: 5px;
+    grid-template-columns: auto 150px 150px 150px 150px;
+    grid-gap: 15px;
     padding:20px;
 }
 
@@ -11,6 +11,20 @@
     text-align: center;
     padding: 15px;
     font-size: 20px;
+}
+.grid-container2
+{
+    display:grid;
+    grid-template-columns: 300px auto 400px;
+    grid-gap: 5px;
+    padding:20px;
+}
+.grid-container2 > div
+{
+        border: 1px solid black;
+        text-align: center;
+        padding: 15px;
+        font-size: 20px;
 }
 .header-nav
 {
@@ -33,15 +47,15 @@
 }
 .news
 {
-    grid-column:2/4;
+    grid-column:2/3;
 }
 .ql
 {
-    grid-column: 4/6;
+    grid-column: 3/4;
 }
 .faq
 {
-    grid-column: 4/6;
+    grid-column: 3/4;
 }
 a
 {
@@ -49,5 +63,6 @@ a
 }
 .ql a
 {
- color: brown;   
+ color: brown;
+ font-size: larger;  
 }
