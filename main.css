@@ -78,7 +78,23 @@ a
 {
     color:crimson;
 }
-li:hover
+.ql li:hover
 {
     font-size: x-large;
+}
+.faq a
+{
+ color: brown;
+}
+.faq a:hover
+{
+    color:crimson;
+}
+.faq li:hover
+{
+    font-size: larger;
+}
+h1
+{
+    text-align:center;
 }
