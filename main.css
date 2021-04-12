@@ -115,3 +115,13 @@ strong
 {
     color:red;
 }
+.report
+{
+    background-color:rgb(213, 197, 197);
+    padding: 15px;
+}
+.report li
+{
+    font-size: 20px;
+    padding:15px;
+    }
