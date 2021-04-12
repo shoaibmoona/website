@@ -111,3 +111,7 @@ h1
     padding:20px;
     background-color:rgb(213, 197, 197);
 }
+strong
+{
+    color:red;
+}
