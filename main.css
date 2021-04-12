@@ -39,6 +39,10 @@
 {
     background-color:darkblue;
 }
+.header-nav a:hover
+{
+    font-size: larger;
+}
 .marquee{
     grid-column: 1/6;
     background-color: lightyellow;
@@ -68,5 +72,13 @@ a
 .ql a
 {
  color: brown;
- font-size: larger;  
+ font-size: larger;
+}
+.ql a:hover
+{
+    color:crimson;
+}
+li:hover
+{
+    font-size: x-large;
 }
