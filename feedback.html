@@ -1,23 +1,176 @@
 <!DOCTYPE html>
 <html>
     <head>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
+/* ABOUT US CSS  */
+*{
+    margin: 0;
+    padding: 0;
+}
+.feedback{
+    background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(../website-main/Img/feedback.jpg);
+    background-size: cover;
+    background-repeat: inherit;
+    background-position: fixed;
+    background-size: 100%;
+}
+.navbar{
+    height: 80px;
+    width: 100%;
+    background:transparent;
+}
+.logo{
+    height: 60px;
+    padding: 1px 10px;
+    margin-top: 15px;
+}
+.navbar ul{
+    float: right;
+    margin: right;
+}
+.navbar ul li{
+    list-style: none;
+    margin-right: 15px;
+    display: inline-block;
+    line-height: 100px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    padding: 5px 6px;
+    margin-right:15px ;
+    font-family: 'Poppins', sans-serif ;
+    font-weight: bold;
+}
+.navbar ul li a.active,
+.navbar ul li a:hover{
+    background: rgb(146, 23, 40);
+    border-radius: 2px;
+}
+.container{
+    margin-top: 50px;
+    margin-left: 100px;
+    margin-right: 100px;
+    padding: 25px;
+    background: rgba(10, 86, 252, 0.1);
+}
+.container h3{
+    padding: 10px;
+    color: rgb(255, 232, 232);
+    font-family: poppins;
+    font-size: 50px;
+    font-weight: 1000;    
+}
+.row{
+    margin: 0;
+    padding: 0;
+}
+form-group{
+    margin: 5px;
+    padding: 1px;
+}
+.form-group .form-control{
+    text-align: center;
+    width: 30cm;
+    margin: 50;
+    padding: 10px;
+    font-family: monospace;
+} 
+.form-control p{
+    font-family: poppins;
+    font-size: 10px;
+}
+.col-md-6{
+    margin:40px;
+    padding:10px;
+}
+textarea{
+    margin: 15px;
+    margin-left:5px ;
+    padding: 10px;
+    width: 30cm;
+    height:5cm;
+}
+.form-group {
+    font-size: 15px;
+    font-family: poppins;
+    text-align: center;
+    color:white;
+}
+.form-group2{
+    font-size: 20px;
+    font-family: poppins;
+    text-align: center;
+    color:white;
+} 
+        </style>
         <title>Feedback</title>
-        <link rel="stylesheet" href="main.css">
+        
     </head>
     <body>
-        
-        <div class="grid-container">
-
-            <a href="index.html">
-                <img alt="e-Filing, Income Tax Department, Government of India" height="58" title="e-Filing, Income Tax Department, Government of India" src="https://www.incometaxindiaefiling.gov.in/assets/images/efilinglogo.gif">
-            </a>
-
-    <div class="header-nav"><a href="About.html">About Us</a></div> 
-    <div class="header-nav"><a href="feedback.html">Feedback</a></div>
-    <div class="header-nav"><a href="Accessibility.html">Accessibility</a></div>
-    <div class="header-nav"><a href="Contact.html">Contact Us</a></div>
-</div>
-        </div>
-
+        <div class="feedback">
+            <nav class="navbar">
+                <img class="logo" src="../website-main/Img/logomain.png">
+                <ul>
+                    <li><a href="./About.html">About Us</a></li>
+                    <li><a class="active" href="./feedback.html">Feedback</a></li>
+                    <li><a href="./index.html">Home</a></li>
+                    <li><a href="./Contact.html">Contact Us</a></li>
+                </ul>
+            </nav>
+            <div class="container">
+                <form method="POST">
+                    <h3 style="text-align: center;">Give us your feedback</h3>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Your Name">
+                            </div>
+                            <br>
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Your Phone Number">
+                            </div>
+                            <br><br>
+                            <div class="form-group">
+                                <p style="font-family: poppins;font-size: 25px;font-weight: 500;text-align: center;color: rgb(212, 212, 212);font-weight: 600;">Did you get your queries solved ?</p>
+                                Yes<input type="radio" name="1">
+                                No<input type="radio" name="1">
+                            </div>
+                            <textarea name="txtmsg" placeholder="Your Message or Suggestion"></textarea>
+                            <div class="form-group">
+                                <input type="submit" name="btnsubmit" class="btnFeedback" value="Send Feedback" style="outline: none;color: rgb(255, 255, 255);margin: 5px;padding: 10px;font-family: poppins;margin-left: 10px;background: rgb(146, 23, 40);">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="text" name="TxtEmail" class="form-control" placeholder="Your Email">
+                                <br><br>
+                                <p1 style="text-align: center;">Are you satisfied with our services ?</p1>
+                                <br><br>
+                                Yes<input type="radio" name="2">
+                                No<input type="radio" name="2">
+                            </div>
+                            <div class="form-group2">
+                                <br>
+                                <p3>Rate us in a scale of 1 to 10</p3>
+                                <input type="radio" name="3">
+                                <input type="radio" name="3">
+                                <input type="radio" name="3">
+                                <input type="radio" name="3">
+                                <input type="radio" name="3">
+                                <input type="radio" name="3">
+                                <input type="radio" name="3">
+                                <input type="radio" name="3">
+                                <input type="radio" name="3">
+                                <input type="radio" name="3">
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>  
     </body>
 </html>
