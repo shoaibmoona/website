@@ -1,23 +1,138 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Contact Us</title>
-        <link rel="stylesheet" href="main.css">
-    </head>
-    <body>
+
+<head>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400&display=swap');
+/* ABOUT US CSS  */
+*{
+    margin: 0;
+    padding: 0;
+}
+.contact{
+    background:linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(../website-main/Img/contact.jpg);
+    background-size: cover;
+    background-repeat: inherit;
+    background-position: fixed;
+    background-size: 100%;
+}
+.navbar{
+    height: 80px;
+    width: 100%;
+    background:transparent;
+}
+.logo{
+    height: 60px;
+    padding: 1px 10px;
+    margin-top: 15px;
+}
+.navbar ul{
+    float: right;
+    margin: right;
+}
+.navbar ul li{
+    list-style: none;
+    margin-right: 15px;
+    display: inline-block;
+    line-height: 100px;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    padding: 5px 6px;
+    margin-right:15px ;
+    font-family: 'Poppins', sans-serif ;
+    font-weight: bold;
+}
+.navbar ul li a.active,
+.navbar ul li a:hover{
+    background: rgb(146, 23, 40);
+    border-radius: 2px;
+}
+
+/* The conatiners for contact us page */
+.contact-section{
+  background: url(bg.png) no-repeat center;
+  background-size: cover;
+  padding: 40px 0;
+}
+.contact-section h1{
+  text-align: center;
+  color: #ddd;
+}
+.border{
+  width: 100px;
+  height: 10px;
+  background: #34495e;
+  margin: 40px auto;
+}
+
+.contact-form{
+  max-width: 600px;
+  margin: auto;
+  padding: 0 10px;
+}
+
+.contact-form-text{
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 16px 0;
+  border: 0;
+  background: #111;
+  padding: 20px 40px;
+  outline: none;
+  color: #ddd;
+}
+textarea.contact-form-text{
+  resize: none;
+  height: 175px;
+}
+.contact-form-btn{
+  float: center;
+  margin:10px;
+  border: 0;
+  background: #34495e;
+  color: #fff;
+  padding: 12px 50px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.contact-form-btn:hover{
+  background: #2980b9;
+}
+
+    </style>
+    <title>Contact Us</title>
+</head>
+
+<body>
+    <div class="contact">
+        <nav class="navbar">
+            <img class="logo" src="../website-main/Img/logomain.png">
+            <ul>
+                <li><a href="./About.html">About Us</a></li>
+                <li><a href="./feedback.html">Feedback</a></li>
+                <li><a href="./index.html">Home</a></li>
+                <li><a class="active" href="./Contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+        <div class="contact-section">
         
-        <div class="grid-container">
-
-            <a href="index.html">
-                <img alt="e-Filing, Income Tax Department, Government of India" height="58" title="e-Filing, Income Tax Department, Government of India" src="https://www.incometaxindiaefiling.gov.in/assets/images/efilinglogo.gif">
-            </a>
-
-    <div class="header-nav"><a href="About.html">About Us</a></div> 
-    <div class="header-nav"><a href="feedback.html">Feedback</a></div>
-    <div class="header-nav"><a href="Accessibility.html">Accessibility</a></div>
-    <div class="header-nav"><a href="Contact.html">Contact Us</a></div>
-</div>
+            <h1 style="font-family: poppins;font-weight: 600;">Contact Us</h1>
+            <div class="border"></div>
+            <form class="contact-form" action="index.html" method="post">
+                <input type="text" class="contact-form-text" placeholder="Your name">
+                <input type="email" class="contact-form-text" placeholder="Your email">
+                <input type="text" class="contact-form-text" placeholder="Your phone">
+                <textarea class="contact-form-text" placeholder="Your message"></textarea>
+                <input type="submit" class="contact-form-btn" value="Send">
+            </form>
         </div>
+    </div>
+</body>
 
-    </body>
 </html>
