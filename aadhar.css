@@ -1,63 +1,61 @@
-body
-{
-    background-image:url('https://cdn1.vectorstock.com/i/1000x1000/94/30/abstract-dark-blue-geometric-futuristic-background-vector-21809430.jpg');
-    background-size:cover;
+body {
+    background-image: url('https://cdn1.vectorstock.com/i/1000x1000/94/30/abstract-dark-blue-geometric-futuristic-background-vector-21809430.jpg');
+    background-size: cover;
 }
 
-fieldset
-{
-border: solid black 5px;
-border-radius:20px;
-background-color: rgb(174, 220, 228,0.5);
-height:50%;
+fieldset {
+    border: solid black 5px;
+    border-radius: 20px;
+    background-color: rgb(174, 220, 228, 0.5);
+    height: 50%;
 }
-legend
-{
 
-font-family:algerian;
+legend {
+    font-family: algerian;
 }
-a
-{
-border: solid rgb(0, 0, 102) 2px;
-background-color:rgb(51, 102, 204);
-color:white;
-text-decoration:none;
-padding:2px;
+
+a {
+    border: solid rgb(0, 0, 102) 2px;
+    background-color: rgb(51, 102, 204);
+    color: white;
+    text-decoration: none;
+    padding: 2px;
 }
-input[type=text]
-{
-background-color:rgb(204, 255, 255);
-padding:2px;
-border-style:inset;
-outline:none;
+
+input[type=text] {
+    background-color: rgb(204, 255, 255);
+    padding: 2px;
+    border-style: inset;
+    outline: none;
 }
-input:focus 
-{
-outline:#ff0000 solid 3px;
+
+input:focus {
+    outline: #ff0000 solid 3px;
 }
-input[type=submit],[type=reset]
-{
-cursor: pointer;
-background-color: limegreen;
-padding: 10px;
-border-radius:10px;
+
+input[type=submit], [type=reset] {
+    cursor: pointer;
+    background-color: limegreen;
+    padding: 10px;
+    border-radius: 10px;
 }
-input[type=submit]:hover,[type=reset]:hover
-{
-background-color:blue;
+
+input[type=submit]:hover, [type=reset]:hover {
+    background-color: blue;
 }
-h3{
-    background-color: rgb(255, 160, 122,0.6);
-    padding:5px;
-    margin-top:-15px;
+
+h3 {
+    background-color: rgb(255, 160, 122, 0.6);
+    padding: 5px;
+    margin-top: -15px;
 }
-ul
-{
-color:rgba(253, 0, 0, 0.938);
+
+ul {
+    color: rgba(253, 0, 0, 0.938);
 }
-label{
-    color:rgb(0, 0, 0);
-    font-size:20px;
+
+label {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
     font-style: oblique;
-
 }
