@@ -25,6 +25,26 @@
     padding: 15px;
     font-size: 20px;
 }
+.grid-form {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 5px;
+    padding: 20px;
+}
+.grid-form>div {
+    border: 1px solid black;
+    text-align: center;
+    padding: 15px;
+    font-size: 20px;
+    background-color:darkgrey;
+}
+.form-login input {
+    margin: 2em;
+}
+
+sup {
+    color:red;
+}
 
 .header-nav {
     background-color: #01578a;
@@ -129,4 +149,8 @@ strong {
 
 .report a {
     color: red;
+}
+
+#underconst {
+    text-align: center;
 }
